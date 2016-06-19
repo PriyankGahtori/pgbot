@@ -1,7 +1,13 @@
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
+
 const VALIDATION_TOKEN = 'pgboot_2016';
 const PAGE_ACCESS_TOKEN = 'EAAWDPyh0xagBAIVHd4n5vlY3BQKhRNgdZCnpTQKZBZCD9iZCr9wLhgWewE4R5gJ1QH2oq8efmPYsCZBi1bYZAZCZBXw4Mr5r4uYYiJQ7noxeZAGWo1weAXL20HXcXfCaqfcevAFj9T0oytsbsVBgOtfAZBbw7JhAN4qLuVeeVrQo5JYwZDZD';
+
+// parse application/json
+app.use(bodyParser.json());
+
 //for testing purpose
 app.get('/hello', function (req, res) {
   res.send('Hello World!');
