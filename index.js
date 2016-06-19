@@ -64,6 +64,16 @@ app.post('/webhook', function (req, res) {
   }
 });
 
+//when message delivery
+function receivedDeliveryConfirmation(event){
+  console.log("message delivered....");
+}
+
+//message receivedPostback
+function receivedPostback(event){
+  console.log("message receivedPostback....");
+}
+
 //when message is received
 function receivedMessage(event) {
   var senderID = event.sender.id;
