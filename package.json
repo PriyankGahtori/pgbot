@@ -1,0 +1,23 @@
+{
+  "name": "pgbot",
+  "version": "1.0.0",
+  "description": "bot for fun",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PriyankGahtori/pgbot.git"
+  },
+  "author": "Priyank Gahtori",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PriyankGahtori/pgbot/issues"
+  },
+  "homepage": "https://github.com/PriyankGahtori/pgbot#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
